@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <!----------------head starts------------->
+<head>
+        <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="jquery.js"></script>
+</head>
+    <!------------------head ends------------>
+    <!----------------body start------------------->
+<body>
+    <!--------------welcome page----------------->
+<section class="background">
+   <h1>Musical World</h1>
+    <h3>Music is a world within itself. With a Language we all Understand</h3>
+    <!-------------------modal open------------>
+  <a href="#open-modal" class="button">Welcome</a>
+  <div id="open-modal" class="modal__background">	
+      
+    <div class="modal__content">
+        <div class="login-form">
+            <!--------------------modal input------------->
+     <h2 class="logg">Login</h2>
+     <div class="form-group ">
+       <input type="text" class="form-control" placeholder="Username " id="UserName">
+       
+     </div>
+     <div class="form-group log-status">
+       <input type="password" class="form-control" placeholder="Password" id="Passwod">
+       
+     </div>
+   <a class="signup" href="#">Create New Account</a>
+      <a class="link" href="#">Lost your password?</a>
+     <button type="button" class="log-btn" >Log in</button>
+     
+    
+   </div>
+        <a href="#close" title="Close" class="close">
+
+      <svg x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g id="Layer_3">
+	<path d="M34.421,24.02l13.318-13.268c0.188-0.187,0.294-0.44,0.294-0.706c0-0.266-0.104-0.52-0.292-0.708
+		l-8.983-9.018c-0.187-0.187-0.441-0.293-0.707-0.294c0,0-0.001,0-0.001,0c-0.265,0-0.519,0.104-0.706,0.292L24.027,13.587
+		L10.759,0.267c-0.187-0.187-0.441-0.293-0.707-0.294c0,0-0.001,0-0.001,0c-0.265,0-0.519,0.104-0.706,0.292L0.328,9.248
+		c-0.392,0.39-0.393,1.023-0.003,1.414L13.593,23.98L0.274,37.248c-0.391,0.39-0.392,1.023-0.003,1.414l8.983,9.018
+		c0.187,0.188,0.441,0.293,0.707,0.294h0.002c0.265,0,0.518-0.104,0.705-0.292l13.318-13.267l13.268,13.318
+		c0.195,0.196,0.452,0.294,0.708,0.294c0.255,0,0.511-0.097,0.706-0.292l9.017-8.982c0.392-0.39,0.393-1.022,0.003-1.414
+		L34.421,24.02z"/>
+</g>
+</svg>
+      </a>
+      </div>
+  </div>
+    <!-----------------------modal closed------------>
+    </section>
+    <div class="main hidden">
+        <section >
+            <nav class="circle">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Music Sheets</a></li>
+                    <li><a href="#">Songs</a></li>
+                    <li class="vir"><a href="#">Virtual Piano</a></li>
+                </ul>
+             </nav>
+                     <div class="right floated user-name">
+                     </div>
+          </section>
+        <section class="music">
+            <div class="widget">
+  <div class="img"><img src="https://images.genius.com/5573e6455f43dd2aa3a8501387216bf9.1000x1000x1.jpg" class="imag"></div>
+  <div class="name">Your Song</div>
+  <div class="article">Rita Ora — Your Song 2017</div>
+  
+  <div class="player">
+    <div id="prev" class="player_btn"></div>
+    <div  class=" fa fa-play clickable play-icon" aria-hidden="true"></div>
+    <div id="next" class="player_btn"></div>
+      <div id="progressBar"><span id="progress"></span></div>
+      <div class="duration">  <span class="time-elapsed"></span>/ <span class="song-duration"></span></div>
+  </div>
+
+           
+        <div class="songs">
+            <div class="slist"><marquee class="current-song">Your Song--Rita Ora — Your Song@2017</marquee></div>
+
+            <audio src="songs/song.mp3"></audio>
+        </div>
+            </div>
+        </section>
+        <section class="piano hidden">
+        <img src="images/Virtual_Piano%20(1).jpg" class="pia">
+        </section>
+    </div>
+    
+    <!--------------------body end--------------->
+    <script src="javascript.js" type="text/javascript">
+    </script>
+    </body>
+</html>
