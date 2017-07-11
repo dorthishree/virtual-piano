@@ -70,7 +70,10 @@ function updateCurrentTime() {
        console.log(progress);
    }
    progress.style.width = value + "%";
+   progress.style.backgroundColor= "red";
+    
 }
+
    
 
 window.onload = function() {
@@ -83,3 +86,8 @@ setInterval(function() {
 updateProgress();
 },1000);
 }
+ $('.main .vir').on('click', function() {
+        
+       $('.music').addClass('hidden'); 
+     $('.piano').removeClass('hidden');
+ });
