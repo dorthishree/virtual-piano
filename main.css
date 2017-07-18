@@ -16,6 +16,14 @@ h3
     font-size: 25px;
     color: black;
 }
+.player-buttons .fa {
+/*    margin-right: 1rem;*/
+    margin-right: 5px;
+}
+
+.fa.disabled {
+    color: gray;
+}
 .modal__background {
   position: fixed;
   top: 0;
@@ -282,12 +290,13 @@ nav ul li a:hover
 }
 .songs
 {
+    overflow: auto;
+       position: fixed;
     border: 1px solid #dedede;
-    height: 103%;
-    width: 40%;
-    float: right;
-    margin-right: -382px;
-    margin-top: -9px;
+    height: 79%;
+    width: 24%;
+    margin-left: 966px;
+    margin-top: -526px;
     border-radius: 5px;
 }
 .right.floated {
@@ -301,23 +310,11 @@ nav ul li a:hover
 {
 border:3px solid red;
 }
-.fa-play
-{
-    color: white;
-   
-    position: absolute;
-    margin-top: 5px;
-}
-.fa-pause
-{
-        position: absolute;
-    margin-top: 5px;
-    color: white;
-    color: white;
-}
+
 .widget{
 padding: 10px;
-    background: url(http://maxme-life.ru/tests/noise1.png), #ffe106;
+    background:url(http://maxme-life.ru/tests/noise1.png), #ffe106;
+
     width: 874px;
     height: 526px;
     box-sizing: border-box;
@@ -386,28 +383,10 @@ padding: 10px;
 
 }
 
-.player_btn{
-  width:27px;height:27px;
-  background:red;
-  display:inline-block;
-}
 
-#prev{
-  background:url(http://maxme-life.ru/tests/prev.png);
-}
-#play_pause{
-  background:url(http://maxme-life.ru/tests/pause.png);
-}
-
-#next{
-  background:url(http://maxme-life.ru/tests/next.png);
-        margin-left: 16px;
-
-}
 .time{
   vertical-align:top;
   display:inline-block;
-  
   padding:5px 50px;
   text-shadow:0 1px 0px rgba(255,255,255,.8);
 }
@@ -421,14 +400,25 @@ padding: 10px;
     border-radius: 15px;
     border: 1px solid black;
 }
+.current
+{
+    float: left;
+    color: white;
+    margin-top: 8px;
+}
+.curr
+{
+        margin-left: -3px;
+    margin-top: 32px;
+}
 .slist
 {
     height: 34px;
     position: fixed;
-    width: 340px;
+    width: 327px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background-color: rgba(222,222,222,0.2)
+    background-color: #2D2322;
 }
 .current-song
 {
@@ -443,16 +433,558 @@ padding: 10px;
         width: 22%;
     float: right;
     margin-right: 150px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
+
 #progressBar { 
-   border:1px solid #aaa; 
-   color:#fff; 
-   width:295px; 
-   height:20px;
+    
+    width: 208px;
+    height: 20px;
+    margin-left: 115px;
+    margin-top: -23px;
 }
 span#progress {
    background-color:#ff0000; // red
-   height:20px;
+   height:2px;
    display:inline-block;
+}
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30pxf;
+    cursor: pointer;
+    margin-top: 18px;
+}
+.llist
+{
+        margin-top: 14px;
+    margin-left: 21px;
+      overflow: auto;
+}
+
+.song-name
+{
+    height: 18px !important;
+}
+
+.song > span {
+    z-index:-1;
+    height: 25px !important;
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+    color: #fff;
+    font-family: 'Alegreya', serif;
+    margin-top: 32px;
+        margin-left: 18px;
+}
+.song > span:first-child {
+    width: 150px;
+}
+.cureent-song
+{
+    display: inline-block;
+}
+.artist1
+{
+        color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 39px;
+    left: 25px;
+    font-family: serif !important;
+}
+.artist2
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 105px;
+    left: 24px;
+    font-family: serif !important;
+}
+.artist3
+{      color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    font-family: serif !important;
+}
+.artist4
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 234px;
+    font-family: serif !important;
+    left: 24px;
+
+}
+.artist5
+{
+         color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 299px;
+    left: 26px;
+    font-family: serif !important;
+}
+.artist6
+{
+        color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 360px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist7
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 425px;
+    left: 24px;
+    font-family: serif !important;
+}
+.artist8
+{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 491px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist9
+{
+    color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 556px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist10{
+       color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 619px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist11
+{
+     color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 686px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist12 {
+        color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 751px;
+    left: 21px;
+    font-family: serif !important;
+}
+.artist13
+{
+    color: white !important;
+    font-size: 13px;
+    position: absolute;
+    top: 815px;
+    left: 21px;
+    font-family: serif !important;
+}
+
+
+.time
+{
+
+    left: 196px;
+    top: 11px;
+    padding: 0px !important; 
+    width: 38px !important;
+}
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+#piano
+{
+        margin-left: -16px;
+}
+ul#piano li {
+  list-style:none;
+  float:left;
+  display:inline;
+  background:#aaa;
+  width:40px;
+  position:relative;
+}
+
+
+ul#piano li div.anchor {
+  display:block;
+  height:220px;
+  background:#fff;
+  background:-webkit-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-moz-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-ms-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-o-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:linear-gradient(-30deg,#f5f5f5,#fff);
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 0px #fff,inset 0 -1px 0px #fff,inset 1px 0px 0px #fff,inset -1px 0px 0px #fff,0 4px 3px rgba(0,0,0,0.7);
+  -webkit-border-radius:0 0 3px 3px;
+  border-radius:0 0 3px 3px;
+}
+
+
+
+ul#piano li div.anchor:active:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent transparent transparent rgba(0,0,0,0.1);
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+ul#piano li div.anchor:active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent rgba(0,0,0,0.1) transparent transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+/* Black Tuts */
+ul#piano li span {
+  position:absolute;
+  top:0px;
+  left:-12px;
+  width:20px;
+  height:120px;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+   -webkit-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+}
+div#p-wrapper
+{
+    width: 880px;
+    height: 262px;
+    padding-right: 4px;
+    border: 2px solid black;
+    border-radius: 14px;
+    padding-left: 0;
+    padding-top: 107px;
+    background: url("images/Virtual_Piano%20(1).jpg");
+    background-size: 100% 101%;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 257px;
+    box-shadow: 21px 17px 31px;
+
+}
+
+ul#piano li span:active {
+  border-bottom-width:2px;
+  height:123px;
+  -webkit-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  -moz-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+}
+footer
+{
+        position: absolute;
+    color: wheat;
+    bottom: 0;
+    font-size: 28px;
+    text-align: center;
+    left: 40%;
+}
+table.dataTable tbody tr {
+    background-color: initial;
+}
+#songs_info {
+    display: none;
+}
+
+#songs_filter {
+    color: transparent;
+}
+#songs_filter input {
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.no-footer
+{
+    color: white;
+        height: 502px;
+        margin-top: -127px;
+    margin-left: 854px;
+}
+.volume
+{
+        color: black !important;
+    margin-left: 124px;
+    position: absolute;
+    margin-top: -76px;
+    -webkit-appearance: slider-vertical;
+    height: 96px;
+}
+ul#piano li {
+  list-style:none;
+  float:left;
+  display:inline;
+  background:#aaa;
+  width:40px;
+  position:relative;
+}
+
+
+ul#piano li div.anchor {
+  display:block;
+  height:220px;
+  background:#fff;
+  background:-webkit-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-moz-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-ms-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-o-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:linear-gradient(-30deg,#f5f5f5,#fff);
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 0px #fff,inset 0 -1px 0px #fff,inset 1px 0px 0px #fff,inset -1px 0px 0px #fff,0 4px 3px rgba(0,0,0,0.7);
+  -webkit-border-radius:0 0 3px 3px;
+  border-radius:0 0 3px 3px;
+  
+}
+
+
+
+ul#piano li div.anchor:active:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent transparent transparent rgba(0,0,0,0.1);
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+ul#piano li div.anchor:active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent rgba(0,0,0,0.1) transparent transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+/* Black Tuts */
+ul#piano li span {
+  color:white;
+  position:absolute;
+  top:0px;
+  left:-12px;
+  width:20px;
+  height:120px;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+   -webkit-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+}
+
+ul#piano li {
+  list-style:none;
+  float:left;
+  display:inline;
+  background:#aaa;
+  width:40px;
+  position:relative;
+}
+
+
+ul#piano li div.anchor {
+  display:block;
+  height:220px;
+  background:#fff;
+  background:-webkit-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-moz-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-ms-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:-o-linear-gradient(-30deg,#f5f5f5,#fff);
+  background:linear-gradient(-30deg,#f5f5f5,#fff);
+  border:1px solid #ccc;
+  -webkit-box-shadow:inset 0 1px 0px #fff,inset 0 -1px 0px #fff,inset 1px 0px 0px #fff,inset -1px 0px 0px #fff,0 4px 3px rgba(0,0,0,0.7);
+  -webkit-border-radius:0 0 3px 3px;
+  border-radius:0 0 3px 3px;
+  
+}
+
+
+
+ul#piano li div.anchor:active:before {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent transparent transparent rgba(0,0,0,0.1);
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+ul#piano li div.anchor:active:after {
+  content:"";
+  width:0px;
+  height:0px;
+  border-width:216px 5px 0px;
+  border-style:solid;
+  border-color:transparent rgba(0,0,0,0.1) transparent transparent;
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+/* Black Tuts */
+ul#piano li span {
+  color:white;
+  position:absolute;
+  top:0px;
+  left:-12px;
+  width:20px;
+  height:120px;
+  background:#333;
+  background:-webkit-linear-gradient(-20deg,#333,#000,#333);
+  z-index:10;
+  border-width:1px 2px 7px;
+  border-style:solid;
+  border-color:#666 #222 #111 #555;
+  -webkit-box-shadow:inset 0px -1px 2px rgba(255,255,255,0.4),0 2px 3px rgba(0,0,0,0.4);
+   -webkit-border-radius:0 0 2px 2px;
+    border-radius:0 0 2px 2px;
+}
+
+
+ul#piano li span:active {
+  border-bottom-width:2px;
+  height:123px;
+  -webkit-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  -moz-box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+  box-shadow:inset 0px -1px 1px rgba(255,255,255,0.4),0 1px 0px rgba(0,0,0,0.8),0 2px 2px rgba(0,0,0,0.4),0 -1px 0px #000;
+}
+
+#cont
+{
+    margin-left: 255px;
+    position: absolute;
+    margin-top: -45px;
+    color: white;
+    font-family: 'Alegreya', serif;
+
+}
+
+input[type="radio"] {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+                      -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px hsla(0,0%,100%,.8),
+                0 0 0 1px hsla(0,0%,0%,.6),
+                0 2px 3px hsla(0,0%,0%,.6),
+                0 4px 3px hsla(0,0%,0%,.4),
+                0 6px 6px hsla(0,0%,0%,.2),
+                0 10px 6px hsla(0,0%,0%,.2);
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    width: 15px;
+    -webkit-appearance: none;
+}
+
+input[type="radio"]:after {
+    background-color: #444;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: 7px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+input[type="radio"]:checked:after {
+    background-color: #f66;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                inset 0 2px 2px hsla(0,0%,100%,.4),
+                0 1px 1px hsla(0,0%,100%,.8),
+                0 0 2px 2px hsla(0,70%,70%,.4);
 }

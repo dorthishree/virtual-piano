@@ -1,0 +1,1320 @@
+$('.vir').on('click', function() {
+           var piano=Synth.createInstrument('piano');
+
+$("#key-1").on('click',function(){
+    piano.play('C',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==65)
+        {
+            piano.play('C',3,2);
+        }
+});
+    $("#key-2").on('click',function(){
+    piano.play('D',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==66)
+        {
+            piano.play('D',3,2);
+        }
+});
+      $("#key-3").on('click',function(){
+    piano.play('E',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==67)
+        {
+            piano.play('E',3,2);
+        }
+});
+    $("#key-4").on('click',function(){
+    piano.play('F',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==68)
+        {
+            piano.play('F',3,2);
+        }
+});
+    $("#key-5").on('click',function(){
+    piano.play('G',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==69)
+        {
+            piano.play('G',3,2);
+        }
+});
+    $("#key-6").on('click',function(){
+    piano.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==70)
+        {
+            piano.play('A',3,2);
+        }
+});
+    $("#key-7").on('click',function(){
+    piano.play('B',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==71)
+        {
+            piano.play('B',3,2);
+        }
+});
+    $("#key-8").on('click',function(){
+    piano.play('C',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==72)
+        {
+            piano.play('C',4,2);
+        }
+});
+    $("#key-9").on('click',function(){
+    piano.play('D',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==73)
+        {
+            piano.play('D',4,2);
+        }
+});
+   $("#key-10").on('click',function(){
+    piano.play('E',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==74)
+        {
+            piano.play('E',4,2);
+        }
+}); 
+    $("#key-11").on('click',function(){
+    piano.play('F',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==75)
+        {
+            piano.play('F',4,2);
+        }
+});
+    $("#key-12").on('click',function(){
+    piano.play('G',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==76)
+        {
+            piano.play('G',4,2);
+        }
+});
+    $("#key-13").on('click',function(){
+    piano.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==77)
+        {
+            piano.play('A',4,2);
+        }
+});
+    $("#key-14").on('click',function(){
+    piano.play('B',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==78)
+        {
+            piano.play('F',3,2);
+        }
+});
+    $("#key-15").on('click',function(){
+    piano.play('C',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==79)
+        {
+            piano.play('C',5,2);
+        }
+});
+    $("#key-16").on('click',function(){
+    piano.play('D',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==80)
+        {
+            piano.play('D',5,2);
+        }
+});
+    $("#key-17").on('click',function(){
+    piano.play('E',6,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==81)
+        {
+            piano.play('E',6,2);
+        }
+});
+    $("#key-18").on('click',function(){
+    piano.play('F',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==82)
+        {
+            piano.play('F',5,2);
+        }
+});
+    $("#key-19").on('click',function(){
+    piano.play('G',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==83)
+        {
+            piano.play('G',5,2);
+        }
+});
+   $("#key-20").on('click',function(){
+    piano.play('A',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==84)
+        {
+            piano.play('A',5,2);
+        }
+}); 
+    $("#key-21").on('click',function(){
+    piano.play('B',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==85)
+        {
+            piano.play('B',3,2);
+        }
+});
+
+$("#key_1").on('click',function(){
+    piano.play('C#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==86)
+        {
+            piano.play('C#',3,2);
+        }
+});
+    $("#key_2").on('click',function(){
+    piano.play('D#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==87)
+        {
+            piano.play('D#',3,2);
+        }
+});
+      $("#key_3").on('click',function(){
+    piano.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==88)
+        {
+            piano.play('A#',3,2);
+        }
+});
+    $("#key_4").on('click',function(){
+    piano.play('F#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==89)
+        {
+            piano.play('F#',3,2);
+        }
+});
+    $("#key_5").on('click',function(){
+    piano.play('G#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==90)
+        {
+            piano.play('G#',3,2);
+        }
+});
+    $("#key_6").on('click',function(){
+    piano.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==49)
+        {
+            piano.play('A#',3,2);
+        }
+});
+    $("#key_7").on('click',function(){
+    piano.play('B#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==50)
+        {
+            piano.play('B#',3,2);
+        }
+});
+    $("#key_8").on('click',function(){
+    piano.play('C#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==51)
+        {
+            piano.play('C#',4,2);
+        }
+});
+    $("#key_9").on('click',function(){
+    piano.play('D#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==52)
+        {
+            piano.play('D#',4,2);
+        }
+});
+   $("#key_10").on('click',function(){
+    piano.play('A#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==53)
+        {
+            piano.play('A#',4,2);
+        }
+}); 
+    $("#key_11").on('click',function(){
+    piano.play('F#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==54)
+        {
+            piano.play('F#',4,2);
+        }
+});
+    $("#key_12").on('click',function(){
+    piano.play('G#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==55)
+        {
+            piano.play('G#',4,2);
+        }
+});
+    $("#key_13").on('click',function(){
+    piano.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==56)
+        {
+            piano.play('A#',4,2);
+        }
+});
+    $("#key_14").on('click',function(){
+    piano.play('B#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==57)
+        {
+            piano.play('F#',3,2);
+        }
+});
+    $("#key_15").on('click',function(){
+    piano.play('C#',5,2);
+});
+    $('body').on('keypress',function(event){
+    if(event.keyCode==0)
+        {
+            piano.play('F#',3,2);
+        }
+});
+ });
+<!--------------------------------------------------------------->
+ $('.play-ic').on('click', function() {
+           var organ=Synth.createInstrument('organ');
+
+$("#key-1").on('click',function(){
+    organ.play('C',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==65)
+        {
+            organ.play('C',3,2);
+        }
+});
+    $("#key-2").on('click',function(){
+    organ.play('D',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==66)
+        {
+            organ.play('D',3,2);
+        }
+});
+      $("#key-3").on('click',function(){
+    organ.play('E',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==67)
+        {
+            organ.play('E',3,2);
+        }
+});
+    $("#key-4").on('click',function(){
+    organ.play('F',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==68)
+        {
+            piano.play('F',3,2);
+        }
+});
+    $("#key-5").on('click',function(){
+    organ.play('G',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==69)
+        {
+            organ.play('G',3,2);
+        }
+});
+    $("#key-6").on('click',function(){
+    organ.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==70)
+        {
+            organ.play('A',3,2);
+        }
+});
+    $("#key-7").on('click',function(){
+    organ.play('B',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==71)
+        {
+            organ.play('B',3,2);
+        }
+});
+    $("#key-8").on('click',function(){
+    organ.play('C',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==72)
+        {
+            organ.play('C',4,2);
+        }
+});
+    $("#key-9").on('click',function(){
+    organ.play('D',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==73)
+        {
+            organ.play('D',4,2);
+        }
+});
+   $("#key-10").on('click',function(){
+    organ.play('E',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==74)
+        {
+            organ.play('E',4,2);
+        }
+}); 
+    $("#key-11").on('click',function(){
+    organ.play('F',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==75)
+        {
+            organ.play('F',4,2);
+        }
+});
+    $("#key-12").on('click',function(){
+    organ.play('G',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==76)
+        {
+            organ.play('G',4,2);
+        }
+});
+    $("#key-13").on('click',function(){
+    organ.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==77)
+        {
+            organ.play('A',4,2);
+        }
+});
+    $("#key-14").on('click',function(){
+    organ.play('B',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==78)
+        {
+            organ.play('F',3,2);
+        }
+});
+    $("#key-15").on('click',function(){
+    organ.play('C',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==79)
+        {
+            organ.play('C',5,2);
+        }
+});
+    $("#key-16").on('click',function(){
+    organ.play('D',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==80)
+        {
+            organ.play('D',5,2);
+        }
+});
+    $("#key-17").on('click',function(){
+    organ.play('E',6,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==81)
+        {
+            organ.play('E',6,2);
+        }
+});
+    $("#key-18").on('click',function(){
+    organ.play('F',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==82)
+        {
+            organ.play('F',5,2);
+        }
+});
+    $("#key-19").on('click',function(){
+    organ.play('G',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==83)
+        {
+            organ.play('G',5,2);
+        }
+});
+   $("#key-20").on('click',function(){
+    organ.play('A',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==84)
+        {
+            organ.play('A',5,2);
+        }
+}); 
+    $("#key-21").on('click',function(){
+    organ.play('B',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==85)
+        {
+            organ.play('B',3,2);
+        }
+});
+
+$("#key_1").on('click',function(){
+    organ.play('C#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==86)
+        {
+            organ.play('C#',3,2);
+        }
+});
+    $("#key_2").on('click',function(){
+    organ.play('D#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==87)
+        {
+            organ.play('D#',3,2);
+        }
+});
+      $("#key_3").on('click',function(){
+    organ.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==88)
+        {
+            organ.play('A#',3,2);
+        }
+});
+    $("#key_4").on('click',function(){
+    organ.play('F#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==89)
+        {
+            organ.play('F#',3,2);
+        }
+});
+    $("#key_5").on('click',function(){
+    organ.play('G#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==90)
+        {
+            organ.play('G#',3,2);
+        }
+});
+    $("#key_6").on('click',function(){
+    organ.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==49)
+        {
+            organ.play('A#',3,2);
+        }
+});
+    $("#key_7").on('click',function(){
+    organ.play('B#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==50)
+        {
+            organ.play('B#',3,2);
+        }
+});
+    $("#key_8").on('click',function(){
+    organ.play('C#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==51)
+        {
+            organ.play('C#',4,2);
+        }
+});
+    $("#key_9").on('click',function(){
+    organ.play('D#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==52)
+        {
+            organ.play('D#',4,2);
+        }
+});
+   $("#key_10").on('click',function(){
+    organ.play('A#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==53)
+        {
+            organ.play('A#',4,2);
+        }
+}); 
+    $("#key_11").on('click',function(){
+    organ.play('F#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==54)
+        {
+            organ.play('F#',4,2);
+        }
+});
+    $("#key_12").on('click',function(){
+    organ.play('G#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==55)
+        {
+            organ.play('G#',4,2);
+        }
+});
+    $("#key_13").on('click',function(){
+    organ.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==56)
+        {
+            organ.play('A#',4,2);
+        }
+});
+    $("#key_14").on('click',function(){
+    organ.play('B#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==57)
+        {
+            organ.play('F#',3,2);
+        }
+});
+    $("#key_15").on('click',function(){
+    organ.play('C#',5,2);
+});
+    $('body').on('keypress',function(event){
+    if(event.keyCode==0)
+        {
+            organ.play('F#',3,2);
+        }
+});
+ });
+<!--------------------------------------------------------------->
+$('.play-ico').on('click', function() {
+           var edm=Synth.createInstrument('edm');
+
+$("#key-1").on('click',function(){
+    edm.play('C',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==65)
+        {
+            edm.play('C',3,2);
+        }
+});
+    $("#key-2").on('click',function(){
+    edm.play('D',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==66)
+        {
+            edm.play('D',3,2);
+        }
+});
+      $("#key-3").on('click',function(){
+    edm.play('E',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==67)
+        {
+            edm.play('E',3,2);
+        }
+});
+    $("#key-4").on('click',function(){
+    edm.play('F',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==68)
+        {
+            edm.play('F',3,2);
+        }
+});
+    $("#key-5").on('click',function(){
+    edm.play('G',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==69)
+        {
+            edm.play('G',3,2);
+        }
+});
+    $("#key-6").on('click',function(){
+    edm.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==70)
+        {
+            edm.play('A',3,2);
+        }
+});
+    $("#key-7").on('click',function(){
+    edm.play('B',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==71)
+        {
+            edm.play('B',3,2);
+        }
+});
+    $("#key-8").on('click',function(){
+    edm.play('C',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==72)
+        {
+            edm.play('C',4,2);
+        }
+});
+    $("#key-9").on('click',function(){
+    edm.play('D',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==73)
+        {
+            edm.play('D',4,2);
+        }
+});
+   $("#key-10").on('click',function(){
+    edm.play('E',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==74)
+        {
+            edm.play('E',4,2);
+        }
+}); 
+    $("#key-11").on('click',function(){
+    edm.play('F',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==75)
+        {
+            edm.play('F',4,2);
+        }
+});
+    $("#key-12").on('click',function(){
+    edm.play('G',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==76)
+        {
+            edm.play('G',4,2);
+        }
+});
+    $("#key-13").on('click',function(){
+    edm.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==77)
+        {
+            edm.play('A',4,2);
+        }
+});
+    $("#key-14").on('click',function(){
+    edm.play('B',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==78)
+        {
+            edm.play('F',3,2);
+        }
+});
+    $("#key-15").on('click',function(){
+    edm.play('C',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==79)
+        {
+            edm.play('C',5,2);
+        }
+});
+    $("#key-16").on('click',function(){
+    edm.play('D',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==80)
+        {
+            edm.play('D',5,2);
+        }
+});
+    $("#key-17").on('click',function(){
+    edm.play('E',6,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==81)
+        {
+            edm.play('E',6,2);
+        }
+});
+    $("#key-18").on('click',function(){
+    edm.play('F',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==82)
+        {
+            edm.play('F',5,2);
+        }
+});
+    $("#key-19").on('click',function(){
+    edm.play('G',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==83)
+        {
+            edm.play('G',5,2);
+        }
+});
+   $("#key-20").on('click',function(){
+    edm.play('A',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==84)
+        {
+            edm.play('A',5,2);
+        }
+}); 
+    $("#key-21").on('click',function(){
+    edm.play('B',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==85)
+        {
+            edm.play('B',3,2);
+        }
+});
+
+$("#key_1").on('click',function(){
+    edm.play('C#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==86)
+        {
+            edm.play('C#',3,2);
+        }
+});
+    $("#key_2").on('click',function(){
+    edm.play('D#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==87)
+        {
+            edm.play('D#',3,2);
+        }
+});
+      $("#key_3").on('click',function(){
+    edm.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==88)
+        {
+            edm.play('A#',3,2);
+        }
+});
+    $("#key_4").on('click',function(){
+    edm.play('F#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==89)
+        {
+            edm.play('F#',3,2);
+        }
+});
+    $("#key_5").on('click',function(){
+    edm.play('G#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==90)
+        {
+            edm.play('G#',3,2);
+        }
+});
+    $("#key_6").on('click',function(){
+    edm.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==49)
+        {
+            edm.play('A#',3,2);
+        }
+});
+    $("#key_7").on('click',function(){
+    edm.play('B#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==50)
+        {
+            edm.play('B#',3,2);
+        }
+});
+    $("#key_8").on('click',function(){
+    edm.play('C#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==51)
+        {
+            edm.play('C#',4,2);
+        }
+});
+    $("#key_9").on('click',function(){
+    edm.play('D#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==52)
+        {
+            edm.play('D#',4,2);
+        }
+});
+   $("#key_10").on('click',function(){
+    edm.play('A#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==53)
+        {
+            edm.play('A#',4,2);
+        }
+}); 
+    $("#key_11").on('click',function(){
+    edm.play('F#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==54)
+        {
+            edm.play('F#',4,2);
+        }
+});
+    $("#key_12").on('click',function(){
+    edm.play('G#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==55)
+        {
+            edm.play('G#',4,2);
+        }
+});
+    $("#key_13").on('click',function(){
+    edm.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==56)
+        {
+            edm.play('A#',4,2);
+        }
+});
+    $("#key_14").on('click',function(){
+    edm.play('B#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==57)
+        {
+            edm.play('F#',3,2);
+        }
+});
+    $("#key_15").on('click',function(){
+    edm.play('C#',5,2);
+});
+    $('body').on('keypress',function(event){
+    if(event.keyCode==0)
+        {
+            edm.play('F#',3,2);
+        }
+});
+ });
+<!---------------------------------------------------------------> 
+$('.play-i').on('click', function() {
+           var acoustic=Synth.createInstrument('acoustic');
+
+$("#key-1").on('click',function(){
+    acoustic.play('C',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==65)
+        {
+            acoustic.play('C',3,2);
+        }
+});
+    $("#key-2").on('click',function(){
+    acoustic.play('D',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==66)
+        {
+            acoustic.play('D',3,2);
+        }
+});
+      $("#key-3").on('click',function(){
+    acoustic.play('E',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==67)
+        {
+            acoustic.play('E',3,2);
+        }
+});
+    $("#key-4").on('click',function(){
+    acoustic.play('F',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==68)
+        {
+            acoustic.play('F',3,2);
+        }
+});
+    $("#key-5").on('click',function(){
+    acoustic.play('G',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==69)
+        {
+            acoustic.play('G',3,2);
+        }
+});
+    $("#key-6").on('click',function(){
+    acoustic.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==70)
+        {
+            acoustic.play('A',3,2);
+        }
+});
+    $("#key-7").on('click',function(){
+    acoustic.play('B',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==71)
+        {
+            acoustic.play('B',3,2);
+        }
+});
+    $("#key-8").on('click',function(){
+    acoustic.play('C',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==72)
+        {
+            acoustic.play('C',4,2);
+        }
+});
+    $("#key-9").on('click',function(){
+    acoustic.play('D',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==73)
+        {
+            acoustic.play('D',4,2);
+        }
+});
+   $("#key-10").on('click',function(){
+    acoustic.play('E',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==74)
+        {
+            acoustic.play('E',4,2);
+        }
+}); 
+    $("#key-11").on('click',function(){
+    acoustic.play('F',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==75)
+        {
+            acoustic.play('F',4,2);
+        }
+});
+    $("#key-12").on('click',function(){
+    acoustic.play('G',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==76)
+        {
+            acoustic.play('G',4,2);
+        }
+});
+    $("#key-13").on('click',function(){
+    acoustic.play('A',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==77)
+        {
+            acoustic.play('A',4,2);
+        }
+});
+    $("#key-14").on('click',function(){
+    acoustic.play('B',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==78)
+        {
+            acoustic.play('F',3,2);
+        }
+});
+    $("#key-15").on('click',function(){
+    acoustic.play('C',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==79)
+        {
+            acoustic.play('C',5,2);
+        }
+});
+    $("#key-16").on('click',function(){
+    acoustic.play('D',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==80)
+        {
+            acoustic.play('D',5,2);
+        }
+});
+    $("#key-17").on('click',function(){
+    acoustic.play('E',6,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==81)
+        {
+            acoustic.play('E',6,2);
+        }
+});
+    $("#key-18").on('click',function(){
+    acoustic.play('F',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==82)
+        {
+            acoustic.play('F',5,2);
+        }
+});
+    $("#key-19").on('click',function(){
+    acoustic.play('G',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==83)
+        {
+            acoustic.play('G',5,2);
+        }
+});
+   $("#key-20").on('click',function(){
+    acoustic.play('A',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==84)
+        {
+            acoustic.play('A',5,2);
+        }
+}); 
+    $("#key-21").on('click',function(){
+    acoustic.play('B',5,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==85)
+        {
+            acoustic.play('B',3,2);
+        }
+});
+
+$("#key_1").on('click',function(){
+    acoustic.play('C#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==86)
+        {
+            acoustic.play('C#',3,2);
+        }
+});
+    $("#key_2").on('click',function(){
+    acoustic.play('D#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==87)
+        {
+            acoustic.play('D#',3,2);
+        }
+});
+      $("#key_3").on('click',function(){
+    acoustic.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==88)
+        {
+            acoustic.play('A#',3,2);
+        }
+});
+    $("#key_4").on('click',function(){
+    acoustic.play('F#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==89)
+        {
+            acoustic.play('F#',3,2);
+        }
+});
+    $("#key_5").on('click',function(){
+    acoustic.play('G#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==90)
+        {
+            acoustic.play('G#',3,2);
+        }
+});
+    $("#key_6").on('click',function(){
+    acoustic.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==49)
+        {
+            acoustic.play('A#',3,2);
+        }
+});
+    $("#key_7").on('click',function(){
+    acoustic.play('B#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==50)
+        {
+            acoustic.play('B#',3,2);
+        }
+});
+    $("#key_8").on('click',function(){
+    acoustic.play('C#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==51)
+        {
+            acoustic.play('C#',4,2);
+        }
+});
+    $("#key_9").on('click',function(){
+    acoustic.play('D#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==52)
+        {
+            acoustic.play('D#',4,2);
+        }
+});
+   $("#key_10").on('click',function(){
+    acoustic.play('A#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==53)
+        {
+            acoustic.play('A#',4,2);
+        }
+}); 
+    $("#key_11").on('click',function(){
+    acoustic.play('F#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==54)
+        {
+            acoustic.play('F#',4,2);
+        }
+});
+    $("#key_12").on('click',function(){
+    acoustic.play('G#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==55)
+        {
+            acoustic.play('G#',4,2);
+        }
+});
+    $("#key_13").on('click',function(){
+    acoustic.play('A#',3,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==56)
+        {
+            acoustic.play('A#',4,2);
+        }
+});
+    $("#key_14").on('click',function(){
+    acoustic.play('B#',4,2);
+});
+$('body').on('keypress',function(event){
+    if(event.keyCode==57)
+        {
+            acoustic.play('F#',3,2);
+        }
+});
+    $("#key_15").on('click',function(){
+    acoustic.play('C#',5,2);
+});
+    $('body').on('keypress',function(event){
+    if(event.keyCode==0)
+        {
+            acoustic.play('F#',3,2);
+        }
+});
+ });
+<!--------------------------------------------------------------->
