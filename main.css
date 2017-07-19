@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url('https://fonts.googleapis.com/css?family=Alegreya:900');
+body
+{
+background: #251B1A;
+}
 h1
 {
     font-family: 'Alegreya', serif;
@@ -482,6 +486,7 @@ span#progress {
 }
 .song > span:first-child {
     width: 150px;
+        cursor: pointer;
 }
 .cureent-song
 {
@@ -734,7 +739,7 @@ div#p-wrapper
     background: url("images/Virtual_Piano%20(1).jpg");
     background-size: 100% 101%;
     position: absolute;
-    margin-top: 145px;
+        margin-top: 88px;
     margin-left: 257px;
     box-shadow: 21px 17px 31px;
 
@@ -987,4 +992,11 @@ input[type="radio"]:checked:after {
                 inset 0 2px 2px hsla(0,0%,100%,.4),
                 0 1px 1px hsla(0,0%,100%,.8),
                 0 0 2px 2px hsla(0,70%,70%,.4);
+}
+.abb
+{
+        width: 1001px;
+    border: 2px solid red;
+    height: 531px;
+    margin-left: 185px;
 }

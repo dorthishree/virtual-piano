@@ -22,6 +22,7 @@ function login(){
                 var message = "Hey, " + name;
                 $('.main .user-name').text(message);
                 $('.background').addClass('hidden'); $('.main').removeClass('hidden');
+                $('.main').addClass('animated fadeInLeft');
             }
             else{
                 $('input').addClass('error');
@@ -270,7 +271,7 @@ toggleSong();
 else {
 audio.src = songName;
 toggleSong();
-    changeCurrentSongDetails(songObj);
+     changeCurrentSongDetails(songObj);
 }
 });
 }
@@ -280,11 +281,18 @@ toggleSong();
  $('.main .vir').on('click', function() {
       $('.music').addClass('hidden'); 
      $('.piano').removeClass('hidden');
+     $('music').addClass('animated slideOutRight');
+     $('.piano').addClass('animated slideInRight');
+      
  });
  $('.main .home').on('click', function() {
       $('.piano').addClass('hidden'); 
      $('.music').removeClass('hidden');
+     $('.piano').addClass('animated slideOutRight');
+      $('music').addClass('animated slideInRight');
+     
  });
+
 $('audio').on('ended',function() {
     var audio = document.querySelector('audio');
     if (willShuffle == 1) {
