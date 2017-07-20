@@ -6,16 +6,7 @@ $('.fa-repeat').on('click',function() {
     willLoop = 1 - willLoop;
 });
 
-$('.fa-random').on('click',function() {
-    $('.fa-random').toggleClass('disabled')
-    willShuffle = 1 - willShuffle;
-});
-function timeJump() {
-    var song = document.querySelector('audio')
-    song.currentTime = song.duration - 5;
-}
-
-
+<!------------------------login k liye function--------------------------------->
 function login(){
       var name = $('input').val();
             if(name.length > 2){
@@ -28,18 +19,15 @@ function login(){
                 $('input').addClass('error');
             }
 } 
-
 $('.login-form button').on('click', function() {
           login();
-                               
-        });
+});
 $('body').on('keypress',function(event) {
             if (event.keyCode == 13)
          login();
-                               
-        });
-                
-        function toggleSong() {
+});
+<!--------------------function for toggle songs----------------------------------------->
+ function toggleSong() {
             var song = document.querySelector('audio');
             if(song.paused == true) {
                 console.log('Playing');
@@ -52,7 +40,7 @@ $('body').on('keypress',function(event) {
                 song.pause();
             }
         } 
-         $('.play-icon').on('click', function() {
+ $('.play-icon').on('click', function() {
             toggleSong();
         });
 
@@ -62,7 +50,8 @@ $('body').on('keypress',function(event) {
          toggleSong();
 }
 }); 
-        function fancyTimeFormat(time)
+<!---------------------current time and progress bar---------------------------------->        
+function fancyTimeFormat(time)
 {   
     // Hours, minutes and seconds
     var hrs = ~~(time / 3600);
@@ -100,8 +89,9 @@ function updateCurrentTime() {
    progress.style.backgroundColor= "red";
     
 }
- 
-   var songs = [{
+
+<!------------------ variables for song--------------------------------------->
+    var songs = [{
         'name': 'Your Song',
         'artist': '(Rita Ora)',
         'fileName': 'songs/song1.mp3',
@@ -220,39 +210,8 @@ function updateCurrentTime() {
          'album':'Excuses@GarrySandhu'
                  },
                 ]
-window.onload = function(songObj) {
-    changeCurrentSongDetails(songs[0]);
-       for(var i =0; i < songs.length;i++) {
-        var obj = songs[i];
-        var name = '#song' + (i+1);
-        var song = $(name);
-        song.find('.song-name').text(obj.name);
-        song.find('.song-artist').text(obj.artist);
-        song.find('.song-album').text(obj.album);
-        song.find('.time').text(obj.time);
-//        song.find('.song-image').attr('src','images/' + songObj.thum);
-        addSongNameClickEvent(obj,i+1)
-    }
-   
-
-updateCurrentTime();
-setInterval(function() {
-updateCurrentTime();
-},1000);
-updateProgress();
-setInterval(function() {
-updateProgress();
-},1000);
- 
-  
-    
-}
-  function setvolume(){
-var song = document.querySelector('audio');
-song.volume = slider.value/100;
-  }
-
- function changeCurrentSongDetails(songObj) {
+    <!------------------current songs ki detail--------------->
+function changeCurrentSongDetails(songObj) {
     $('.current-song-image').attr('src','images/' + songObj.image)
     $('.current-song-name').text(songObj.name)
     $('.current-song-album').text(songObj.album)
@@ -275,24 +234,8 @@ toggleSong();
 }
 });
 }
-//for (var i = 0; i < songobj.length ; i++) {
-//    addSongNameClickEvent(obj[i],i+1)
-//} 
- $('.main .vir').on('click', function() {
-      $('.music').addClass('hidden'); 
-     $('.piano').removeClass('hidden');
- 
-     $('.piano').addClass('animated slideInRight');
-      
- });
- $('.main .home').on('click', function() {
-      $('.piano').addClass('hidden'); 
-     $('.music').removeClass('hidden');
- 
-     
- });
-
-$('audio').on('ended',function() {
+<!----------------------------------------------------------->
+    $('audio').on('ended',function() {
     var audio = document.querySelector('audio');
     if (willShuffle == 1) {
         var nextSongNumber = randomExcluded(1,13,currentSongNumber); // Calling our function from Stackoverflow
@@ -321,24 +264,7 @@ $('audio').on('ended',function() {
         audio.currentTime = 0;
     }
 })
-
- 
-var saudio = $('#myAudio');
-$('input').on('change', function(e) {
-  var target = e.currentTarget;
-  var file = target.files[0];
-  var reader = new FileReader();
-  
-  console.log(saudio[0]);
-   if (target.files && file) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            saudio.attr('src', e.target.result);
-            saudio.play();
-        }
-        reader.readAsDataURL(file);
-    }
-});
+<!------------------forward/backward--------------------->
    $('.fa-step-forward').click(function(){
         var audio = document.querySelector("audio");
         if(currentSongNumber <songs.length) {
@@ -371,3 +297,99 @@ $('input').on('change', function(e) {
        
        
         });
+<!-----------------------local song-------------------------------->
+var $audio = $('#myAudio');
+$('input').on('change', function(e) {
+  var target = e.currentTarget;
+  var file = target.files[0];
+  var reader = new FileReader();
+  
+  console.log(saudio[0]);
+   if (target.files && file) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $audio.attr('src', e.target.result);
+            $audio.play();
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
+<!----------------------------piano ko lanne k liye music ko hide krna-------------------------------->
+
+ $('.main .vir').on('click', function() {
+      $('.music').addClass('hidden'); 
+     $('.piano').removeClass('hidden');
+ 
+     $('.piano').addClass('animated slideInRight');
+      
+ });
+ $('.main .home').on('click', function() {
+      $('.piano').addClass('hidden'); 
+     $('.music').removeClass('hidden');
+ 
+     
+ });
+<!-----------------window on load function-------------------------------------->
+       
+window.onload = function(songObj) {
+    changeCurrentSongDetails(songs[0]);
+       for(var i =0; i < songs.length;i++) {
+        var obj = songs[i];
+        var name = '#song' + (i+1);
+        var song = $(name);
+        song.find('.song-name').text(obj.name);
+        song.find('.song-artist').text(obj.artist);
+        song.find('.song-album').text(obj.album);
+        song.find('.time').text(obj.time);
+//        song.find('.song-image').attr('src','images/' + songObj.thum);
+        addSongNameClickEvent(obj,i+1)
+    }
+}
+updateCurrentTime();
+setInterval(function() {
+updateCurrentTime();
+},1000);
+updateProgress();
+setInterval(function() {
+updateProgress();
+},1000);
+<!-------------------random k liye code-------------------------------------->
+
+
+function timeJump() {
+    var song = document.querySelector('audio')
+    song.currentTime = song.duration - 5;
+}
+
+//shuffle
+function randomExcluded(min, max, excluded) {
+    var n = Math.floor(Math.random() * (max-min) + min);
+    if (n >= excluded) n++;
+    return n;
+}	
+
+
+
+
+
+<!-------------------volume slider ka code---------------------------->
+    //////////////////////////////volumeslider function///////////////////////////////
+function setvolume() 
+{						
+	var song = document.querySelector('audio');
+	song.volume = slider.value/100;
+}
+// increase and decrease the volume by volume slider		
+$('#slider').on('mousemove', function() 
+{								
+	setvolume();
+});
+
+/////////////////increase the volume of sidebar on click/////////////////
+$('#slider').on('click', function() 
+{								
+	setvolume();
+});
+
+<!---------------------------------------------------------->
