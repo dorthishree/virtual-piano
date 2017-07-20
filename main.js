@@ -1,11 +1,11 @@
 var currentSongNumber = 1;
-var willLoop = 0;
-var willShuffle = 0; // will use this soon
-$('.fa-repeat').on('click',function() {
-    $('.fa-repeat').toggleClass('disabled')
-    willLoop = 1 - willLoop;
-});
-
+	var willLoop = 0;
+	var willShuffle = 0;
+	var mute = 0;
+	var Playingnumber = 0  ;
+	var shuffle=0;
+	var equal = 0;
+	
 <!------------------------login k liye function--------------------------------->
 function login(){
       var name = $('input').val();
@@ -392,4 +392,20 @@ $('#slider').on('click', function()
 	setvolume();
 });
 
-<!---------------------------------------------------------->
+<!---------------------------mute unmute------------------------------->
+$('.fa-volume-up').on('click',function(){        //mute and unmute the song
+	 var audio = document.querySelector('audio');
+	 if(mute == 0){
+		 audio.muted = true;
+		 mute = 1;
+		 console.log('mute');
+		 $('.mute').removeClass('fa-volume-up').addClass('fa-volume-off');
+	 }
+	 else {
+		  audio.muted = false;
+		  mute = 0;
+		  console.log('unmute')
+		   $('.mute').removeClass('fa-volume-off').addClass('fa-volume-up');
+
+	 }
+});

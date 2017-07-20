@@ -1000,3 +1000,9 @@ input[type="radio"]:checked:after {
     height: 531px;
     margin-left: 185px;
 }
+.mute
+{
+        position: absolute;
+    margin-left: 183px;
+    margin-top: 28px;
+}
