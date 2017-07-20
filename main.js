@@ -281,15 +281,14 @@ toggleSong();
  $('.main .vir').on('click', function() {
       $('.music').addClass('hidden'); 
      $('.piano').removeClass('hidden');
-     $('music').addClass('animated slideOutRight');
+ 
      $('.piano').addClass('animated slideInRight');
       
  });
  $('.main .home').on('click', function() {
       $('.piano').addClass('hidden'); 
      $('.music').removeClass('hidden');
-     $('.piano').addClass('animated slideOutRight');
-      $('music').addClass('animated slideInRight');
+ 
      
  });
 
