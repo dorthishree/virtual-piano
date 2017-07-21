@@ -304,7 +304,7 @@ $('input').on('change', function(e) {
   var file = target.files[0];
   var reader = new FileReader();
   
-  console.log(saudio[0]);
+  console.log($audio[0]);
    if (target.files && file) {
         var reader = new FileReader();
         reader.onload = function (e) {
